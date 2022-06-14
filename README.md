@@ -1,37 +1,44 @@
-# note-boot
+<h1 align="center">📔 note-boot</h1>
 
-#### 介绍
-Kotlin + SpringBoot 后端
+<p align="center">
+<a target="_blank" href="https://github.com/zhouboyi1998/note-boot"> 
+<img src="https://img.shields.io/github/stars/zhouboyi1998/note-boot?logo=github">
+</a>
+<a target="_blank" href="https://opensource.org/licenses/MIT"> 
+<img src="https://img.shields.io/badge/license-MIT-red"> 
+</a>
+<img src="https://img.shields.io/badge/JDK-1.8-darkcyan"> 
+<img src="https://img.shields.io/badge/Kotlin-1.6.21-orange"> 
+<img src="https://img.shields.io/badge/Spring Boot-2.7.0-brightgreen">
+<img src="https://img.shields.io/badge/Spring Data-2.7.0-brightgreen">
+</p>
 
-#### 软件架构
-软件架构说明
+### 📖 语言
 
+简体中文 | [English](./README.en.md)
 
-#### 安装教程
+### 🐳 Docker
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+* 项目根目录下运行以下命令
 
-#### 使用说明
+#### Maven 打包
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+mvn clean package -DskipTests
+```
 
-#### 参与贡献
+#### Docker 构建
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+```
+docker build -t note-boot .
+```
 
+#### Docker 运行
 
-#### 特技
+```
+docker run -d -p 18092:18092 --name note-boot note-boot
+```
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 📜 开源协议
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义

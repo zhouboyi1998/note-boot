@@ -1,36 +1,44 @@
-# note-boot
+<h1 align="center">📔 note-boot</h1>
 
-#### Description
-Kotlin + SpringBoot 后端
+<p align="center">
+<a target="_blank" href="https://github.com/zhouboyi1998/note-boot"> 
+<img src="https://img.shields.io/github/stars/zhouboyi1998/note-boot?logo=github">
+</a>
+<a target="_blank" href="https://opensource.org/licenses/MIT"> 
+<img src="https://img.shields.io/badge/license-MIT-red"> 
+</a>
+<img src="https://img.shields.io/badge/JDK-1.8-darkcyan"> 
+<img src="https://img.shields.io/badge/Kotlin-1.6.21-orange"> 
+<img src="https://img.shields.io/badge/Spring Boot-2.7.0-brightgreen">
+<img src="https://img.shields.io/badge/Spring Data-2.7.0-brightgreen">
+</p>
 
-#### Software Architecture
-Software architecture description
+### 📖 Language
 
-#### Installation
+[简体中文](./README.md) | English
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 🐳 Docker
 
-#### Instructions
+* Run the command in the project root directory
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Maven Package
 
-#### Contribution
+```
+mvn clean package -DskipTests
+```
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+#### Docker Build
 
+```
+docker build -t note-boot .
+```
 
-#### Gitee Feature
+#### Docker Run
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+docker run -d -p 18092:18092 --name note-boot note-boot
+```
+
+### 📜 Licence
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义
