@@ -14,6 +14,28 @@
 
 [简体中文](./README.md) | English
 
+### 🐳 Docker
+
+* Run the command in the project root directory
+
+#### Maven Package
+
+```
+mvn clean package -DskipTests
+```
+
+#### Docker Build
+
+```
+docker build -t note-boot .
+```
+
+#### Docker Run
+
+```
+docker run -d -p 18092:18092 --name note-boot note-boot
+```
+
 ### 📜 Licence
 
 [MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义

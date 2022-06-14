@@ -14,6 +14,28 @@
 
 简体中文 | [English](./README.en.md)
 
+### 🐳 Docker
+
+* 项目根目录下运行以下命令
+
+#### Maven 打包
+
+```
+mvn clean package -DskipTests
+```
+
+#### Docker 构建
+
+```
+docker build -t note-boot .
+```
+
+#### Docker 运行
+
+```
+docker run -d -p 18092:18092 --name note-boot note-boot
+```
+
 ### 📜 开源协议
 
 [MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义
