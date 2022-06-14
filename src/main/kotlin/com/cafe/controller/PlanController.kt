@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
  * @Package: com.cafe.reminder.controller
  */
 @RestController
-@RequestMapping(value = ["/plan"])
+@RequestMapping(value = ["/note/plan"])
 class PlanController
 @Autowired
 constructor(
