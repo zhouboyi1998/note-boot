@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service
 
 /**
  * @Project: note-boot
- * @Package: com.cafe.reminder.service.impl
+ * @Package: com.cafe.service.impl
+ * @Author: zhouboyi
+ * @Date: 2022/6/14 15:15
+ * @Description:
  */
 @Service
 class PlanServiceImpl
