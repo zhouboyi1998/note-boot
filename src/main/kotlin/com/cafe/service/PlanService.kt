@@ -4,7 +4,10 @@ import com.cafe.model.Plan
 
 /**
  * @Project: note-boot
- * @Package: com.cafe.reminder.service
+ * @Package: com.cafe.service
+ * @Author: zhouboyi
+ * @Date: 2022/6/14 15:15
+ * @Description:
  */
 interface PlanService {
 

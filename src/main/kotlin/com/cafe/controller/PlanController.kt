@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.RestController
 
 /**
  * @Project: note-boot
- * @Package: com.cafe.reminder.controller
+ * @Package: com.cafe.controller
+ * @Author: zhouboyi
+ * @Date: 2022/6/14 15:14
+ * @Description:
  */
 @RestController
 @RequestMapping(value = ["/note/plan"])
