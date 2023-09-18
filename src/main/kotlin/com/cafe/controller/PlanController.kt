@@ -4,6 +4,7 @@ import com.cafe.model.Plan
 import com.cafe.service.PlanService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -19,9 +20,12 @@ import org.springframework.web.bind.annotation.RestController
 class PlanController
 @Autowired
 constructor(
-    private val planService : PlanService
+    private val planService: PlanService
 ) {
 
     @GetMapping(value = ["/list"])
-    fun list() : List<Plan> = planService.list()
+    fun list(): List<Plan> = planService.list()
+
+    @GetMapping(value = ["/one/{id}"])
+    fun one(@PathVariable(value = "id") id: String): Plan = planService.one(id)
 }

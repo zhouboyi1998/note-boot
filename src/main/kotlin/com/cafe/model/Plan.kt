@@ -1,5 +1,7 @@
 package com.cafe.model
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer
 import org.bson.types.ObjectId
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
@@ -14,16 +16,35 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(value = "plan")
 data class Plan(
 
+    /**
+     * ID
+     */
     @Id
-    val id : ObjectId,
+    @JsonSerialize(using = ToStringSerializer::class)
+    val id: ObjectId,
 
-    val title : String,
+    /**
+     * 标题
+     */
+    val title: String,
 
-    val content : List<String>,
+    /**
+     * 内容
+     */
+    val content: List<String>,
 
-    val icon : String,
+    /**
+     * 图标
+     */
+    val icon: String,
 
-    val color : String,
+    /**
+     * 颜色
+     */
+    val color: String,
 
-    val time : String
+    /**
+     * 计划时间
+     */
+    val time: String
 )

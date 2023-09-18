@@ -11,5 +11,7 @@ import com.cafe.model.Plan
  */
 interface PlanService {
 
-    fun list() : List<Plan>
+    fun list(): List<Plan>
+
+    fun one(id: String): Plan
 }

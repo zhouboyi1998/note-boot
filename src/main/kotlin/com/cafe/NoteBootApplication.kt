@@ -13,6 +13,6 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class NoteBootApplication
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     runApplication<NoteBootApplication>(*args)
 }
