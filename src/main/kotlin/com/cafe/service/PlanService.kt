@@ -1,5 +1,6 @@
 package com.cafe.service
 
+import com.cafe.dto.PlanInsertDTO
 import com.cafe.model.Plan
 
 /**
@@ -14,4 +15,10 @@ interface PlanService {
     fun list(): List<Plan>
 
     fun one(id: String): Plan
+
+    fun insert(dto: PlanInsertDTO): Plan
+
+    fun update(plan: Plan): Plan
+
+    fun delete(id: String)
 }

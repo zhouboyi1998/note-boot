@@ -1,12 +1,10 @@
 package com.cafe.controller
 
+import com.cafe.dto.PlanInsertDTO
 import com.cafe.model.Plan
 import com.cafe.service.PlanService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 /**
  * @Project: note-boot
@@ -28,4 +26,13 @@ constructor(
 
     @GetMapping(value = ["/one/{id}"])
     fun one(@PathVariable(value = "id") id: String): Plan = planService.one(id)
+
+    @PostMapping(value = ["/insert"])
+    fun insert(@RequestBody dto: PlanInsertDTO): Plan = planService.insert(dto)
+
+    @PutMapping(value = ["/update"])
+    fun update(@RequestBody plan: Plan): Plan = planService.update(plan)
+
+    @DeleteMapping(value = ["/delete/{id}"])
+    fun update(@PathVariable(value = "id") id: String) = planService.delete(id)
 }
